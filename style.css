@@ -1,0 +1,58 @@
+*{
+    font-family: monospace;
+}
+
+h1{
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.display-name{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.container{
+    display: block;
+    margin: 0 auto ; /*Alinha o container no centro*/
+    max-width: 400px;
+    border: 3px solid #363636;
+    
+}
+
+.item{
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #3de00b;
+    margin: 5px;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+.flex-item-1{
+    flex: 1;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.column{
+    flex-direction: column; /*Existe também, o column-reverse*/
+}
