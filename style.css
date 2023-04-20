@@ -8,6 +8,7 @@ h1{
     text-transform: uppercase;
 }
 
+/*FLEX CONTAINER*/
 /*h2*/
 .display-name{
     text-align: center;
@@ -121,4 +122,28 @@ h1{
     padding: 10px;
 }
 
+/*align-itens*/
+.align-content-start{
+    align-content: flex-start;
+    height: 400px;
+}
 
+.align-content-stretch{
+    align-content: stretch;
+    height: 400px;
+}
+
+
+/*FLEX ITENS*/
+/*grow*/
+.grow0{
+    flex-grow: 0;
+}
+
+.grow1{
+    flex-grow: 1;
+}
+
+.grow2{
+    flex-grow:2;
+}
