@@ -36,7 +36,7 @@ h1{
 
 /*flex-wrap*/
 .flex-wrap{
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
 }
 
 .flex-wrap-reverse{
@@ -49,7 +49,7 @@ h1{
 
 /*flex-direction*/
 .row{
-    flex-direction: row;
+    flex-direction: row; /*linha*/
 }
 
 .row-reverse{
@@ -129,7 +129,7 @@ h1{
 }
 
 .align-content-stretch{
-    align-content: stretch;
+    align-content: stretch; /*ele que faz com que os flex itens cresçam igualmente na vertical.*/
     height: 400px;
 }
 
@@ -146,4 +146,61 @@ h1{
 
 .grow2{
     flex-grow:2;
+}
+
+/*flex*/
+.basis-auto{
+    flex: 1 1 auto; /*grow, shrink basis*/
+}
+
+.basis-auto-grow-2 {
+	flex: 2 1 auto;
+}
+
+.basis-auto-width {
+	flex: 1 1 auto;
+	width: 80px;
+}
+
+/*order*/
+.order-1{
+    order: 1;
+}
+
+.order-2{
+    order: 2;
+}
+
+.order-3{
+    order: 3;
+}
+
+.order--1{
+    order: -1;
+}
+
+/*aligns-self*/
+/*definirmos o alinhamento específico de um único flex item dentro do nosso container*/
+#first-item:first-child{ /*propriedade primeiro item(filho)*/
+    padding-top: 15px;
+}
+
+.align-self-start{
+    align-self: flex-start; /*Alinha o item no inicio*/
+}
+
+.align-self-end{
+    align-self: flex-end; /*Alinha o item no final*/
+}
+
+.align-self-basis{
+    align-self: baseline; /*Alinha o item a linha de base.*/
+}
+
+.align-self-stretch{
+    align-self: stretch; /*Estica o item*/
+}
+
+.align-self-center{
+    align-self: center; /*Alinha o item no centro*/
 }
